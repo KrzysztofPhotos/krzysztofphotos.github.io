@@ -18,10 +18,10 @@ function updateClock(){
         h = "0" + h
     }
     if(m < 10){
-        m = "0" + h
+        m = "0" + m
     }
     if(s < 10){
-        s = "0" + h
+        s = "0" + s
     }
 
     hourEl.innerText = h;
