@@ -7,8 +7,15 @@ const inputEl = document.getElementById("input");
 
 const formEl = document.getElementById("form");
 
+const scoreEl = document.getElementById("score");
 
 let score = JSON.parse(localStorage.getItem("score"));
+
+if (!score){
+    score = 0;
+}
+
+scoreEl.innerHTML = "score: " + score;
 
 questionEl.innerText = "What is "+ num1 + " multiply by " + num2;
 // I could type short version 
