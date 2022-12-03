@@ -3,18 +3,27 @@ const num2 = Math.ceil(Math.random()*10)
 
 const questionEl = document.getElementById("question");
 
+const inputEl = document.getElementById("input")
+
+const formEl = document.getElementById("form")
+
 questionEl.innerText = "What is "+ num1 + " multiply by " + num2
+
+let score = 0;
 
 // I could type short version 
 // questionEl.innerText = `What is ${num1} multiply by ${num2}`
 
-const correct_answer = num1 * num2
+const correctAnswer = num1 * num2
 
-function checkAnswer(){
-    if (userType == correct_answer){
-        // dodaj 1 punkt oraz zmien liczby
+formEl.addEventListener("submit", ()=>{
+    const userAns = +inputEl.value
+    if(userAns == correctAnswer){
+        score ++
+        console.log(score)
     }
     else {
-        // odejmij 1 punkt oraz zmien liczby
+        score --
+        console.log(score)
     }
-}
+})
