@@ -32,3 +32,27 @@ body {
     color:lightgray;
     font-family: cursive;
 }
+
+.btn {
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0,3);
+    cursor: pointer;
+}
+
+.btn:hover{
+    filter: brightness(0.8);
+}
+
+.score {
+    color: green;
+    text-align: right;
+}
