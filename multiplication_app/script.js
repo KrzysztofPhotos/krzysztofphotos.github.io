@@ -3,11 +3,12 @@ const num2 = Math.ceil(Math.random()*10)
 
 const questionEl = document.getElementById("question");
 
-const inputEl = document.getElementById("input")
+const inputEl = document.getElementById("input");
 
-const formEl = document.getElementById("form")
+const formEl = document.getElementById("form");
 
-let score = 0;
+
+let score = JSON.parse(localStorage.getItem("score"));
 
 questionEl.innerText = "What is "+ num1 + " multiply by " + num2;
 // I could type short version 
@@ -19,11 +20,11 @@ formEl.addEventListener("submit", ()=>{
     const userAns = +inputEl.value;
     if(userAns == correctAnswer){
         score ++;
-        console.log(score);
+        updateLocalStorage();
     }
     else {
         score --;
-        console.log(score);
+        updateLocalStorage();
     }
 })
 
