@@ -1,11 +1,15 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .screen {
-    height: 100vh;
+    background-image: url(photo.jpg);
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center; 
     width: 100vw;
-    background-color: red;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -15,4 +19,11 @@ body {
     width: 15vw;
     height: 15vw;
     background-color: pink;
+}
+
+
+.logo {
+    width: 80%;
+    height: 80%;
+    background-image: url("avatar.png");
 }
