@@ -43,7 +43,6 @@ body {
 }
 
 .trailer-container {
-    /* display: none; */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -54,10 +53,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .active.trailer-container {
     visibility: hidden;
+    opacity: 0;
 }
 
 .trailer-container video {
