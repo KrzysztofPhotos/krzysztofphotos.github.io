@@ -8,10 +8,18 @@ for (let index = 0; index < 30; index++) {
 
 const colorContainerEls = document.querySelectorAll(".color-container")
 
-console.log(colorContainerEls)
+generateColors();
 
 function generateColors(){
-    
+    colorContainerEls.forEach((colorContainerEl)=>{
+        const newColorCode = randomColor();
+        colorContainerEl.style.backgroundColor = "#" + newColorCode;
+
+        // colorContainerEl.style.backgroundColor;
+        // in css file we see background-color, but in JS we have to type cammelCase so backgroundColor
+
+        colorContainerEl.innerText = "#" + newColorCode;
+    })
 }
 
 function randomColor(){
@@ -21,6 +29,6 @@ function randomColor(){
     for (let index = 0; index < colorCodeLenght; index++) {
         const randomNum = Math.floor(Math.random() * chars.length);
         colorCode += chars.substring(randomNum, randomNum + 1)
-        console.log(colorCode, randomNum)
     }
+    return colorCode;
 }
