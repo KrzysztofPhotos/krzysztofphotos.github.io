@@ -9,3 +9,34 @@ body {
     background-color: black;
 }
 
+.main-container {
+    max-width: 550px;
+    padding: 10px;
+}
+
+.main-container img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.trailer-container {
+    display: none;
+}
+
+.main-container h1 {
+    color: white;
+    font-weight: 500;
+}
+
+.main-container p {
+    color: white;
+    margin: 15px 0;
+}
+
+.btn {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
