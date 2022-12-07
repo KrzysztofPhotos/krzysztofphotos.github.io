@@ -51,3 +51,11 @@ body {
 .navbar ul li a:hover{
     color: red;
 }
+
+.navbar.active{
+    background-color: black;
+}
+
+.navbar.active ul li a{
+    color: white;
+}
