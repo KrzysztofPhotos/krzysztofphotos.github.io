@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    /* overflow: hidden; */
     font-family: 'Segoe UI';
     color: white;
     font-size: 140%;
@@ -11,7 +10,7 @@ body {
 }
 
 .screen {
-    background-image: url(photo.jpg);
+    background-image: url(wallpaper-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -25,7 +24,6 @@ body {
 .elements {
     width: 14vw;
     height: 14vw;
-    /* background-color: pink; */
     position: fixed;
     text-align: center;
 }
@@ -36,6 +34,7 @@ body {
     height: 75%;
     background: url(avatar.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 50%;
     margin: auto;
     padding-bottom: 5px;
@@ -48,11 +47,9 @@ body {
     position: relative;
     font-weight: 600;
     padding-bottom: 5px;
-    /* background-color: green; */
 }
 
 .div-input {
-    /* background-color: red; */
     width: 100%;
     max-width: 280px;
     margin: auto;
@@ -63,13 +60,13 @@ body {
     width: 90%;
     font-size: 80%;
     border-radius: 5px;
-    /* border: 15px rgba(0, 0, 0, 1); */
     border: 1px solid #1C6EA4;
     box-shadow: 0px 3px 0px -1px rgba(16, 198, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     font-size: 85%;
     padding: 3px;
+    letter-spacing: 2px;
 }
 
 textarea:focus, input:focus{
@@ -86,4 +83,12 @@ textarea:focus, input:focus{
 #forgot-text {
     text-decoration: none;
     color: rgb(197, 197, 197);
+    
+}
+
+.input-pin::placeholder {
+    font-size: font-size: 70%;
+    font-weight: 50;
+    padding-left: 2px;
+    letter-spacing: 0.7px;
 }
