@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Segoe UI';
     color: white;
+    font-size: 140%;
 }
 
 .screen {
@@ -20,16 +21,50 @@ body {
 .elements {
     width: 14vw;
     height: 14vw;
-    background-color: pink;
-    position: relative;
+    /* background-color: pink; */
+    position: fixed;
     text-align: center;
 }
 
 
 .logo {
-    width: 80%;
-    height: 80%;
+    width: 75%;
+    height: 75%;
     background: url(avatar3.jpg);
     background-size: 100%;
     border-radius: 50%;
+    margin: auto;
+}
+
+.username {
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* background-color: green; */
+}
+
+.div-input {
+    /* background-color: red; */
+    width: 100%;
+    max-width: 300px;
+}
+
+.div-input input{
+    margin: 1%;
+    width: 90%;
+    font-size: 80%;
+    border-radius: 5px;
+    /* border: 15px rgba(0, 0, 0, 1); */
+    border: 1px solid #1C6EA4;
+    box-shadow: 0px 3px 0px -1px rgba(16, 198, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
