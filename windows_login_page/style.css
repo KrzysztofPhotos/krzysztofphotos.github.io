@@ -50,7 +50,8 @@ body {
 .div-input {
     /* background-color: red; */
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    margin: auto;
 }
 
 .div-input input{
@@ -63,6 +64,7 @@ body {
     box-shadow: 0px 3px 0px -1px rgba(16, 198, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
+    font-size: 90%;
 }
 
 textarea:focus, input:focus{
