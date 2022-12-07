@@ -4,6 +4,10 @@ body {
     font-family: 'Segoe UI';
     color: white;
     font-size: 140%;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .screen {
@@ -30,20 +34,20 @@ body {
 .logo {
     width: 75%;
     height: 75%;
-    background: url(avatar3.jpg);
+    background: url(avatar.png);
     background-size: 100%;
     border-radius: 50%;
     margin: auto;
+    padding-bottom: 5px;
 }
 
 .username {
     margin-top: 0;
     width: 100%;
+    font-size: 100%;
     position: relative;
     font-weight: 600;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    padding-bottom: 5px;
     /* background-color: green; */
 }
 
@@ -64,9 +68,22 @@ body {
     box-shadow: 0px 3px 0px -1px rgba(16, 198, 0, 0.7);
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 90%;
+    font-size: 85%;
+    padding: 3px;
 }
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+.forgot  {
+    padding-top: 5px;
+    color: rgb(197, 197, 197);
+    font-size: 70%;
+    padding-top: 12px;
+}
+
+#forgot-text {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
 }
