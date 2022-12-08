@@ -1,3 +1,8 @@
+* {
+    cursor: cell;
+    /* cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto; */
+}
+
 body {
     margin: 0;
     background-color: rgb(62, 62, 62);
@@ -17,20 +22,24 @@ body {
 }
 
 .div-dragon label {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 60px;
-    text-shadow: 12 12 1 solid white;
+    text-shadow: 2px 4px 6px rgba(253, 0, 0, 0.3);
 }
 
 .div-dragon progress {
-    height: 40px;
+    height: 60px;
     width: 50vw;
 }
 
 .img-dragon {
-
+    height: 40vh;
+    /* cursor: pointer; */
+    transition: height 0.3s;
 }
 
 .img-dragon:hover {
-
+    height: 45vh;
 }

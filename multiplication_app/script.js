@@ -15,7 +15,7 @@ if (!score){
     score = 0;
 }
 
-scoreEl.innerHTML = "score: " + score;
+scoreEl.innerHTML = "Score: " + score;
 
 questionEl.innerText = "What is "+ num1 + " multiply by " + num2;
 // I could type short version 
