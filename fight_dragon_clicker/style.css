@@ -26,11 +26,11 @@ body {
     padding-bottom: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 60px;
-    text-shadow: 2px 4px 6px rgba(253, 0, 0, 0.3);
+    text-shadow: 2px 4px 3px rgba(140, 0, 255, 0.668);
 }
 
 .div-dragon progress {
-    height: 60px;
+    height: 40px;
     width: 50vw;
 }
 
@@ -42,4 +42,19 @@ body {
 
 .img-dragon:hover {
     height: 45vh;
+}
+
+/* For Firefox */
+.progress-div progress::-moz-progress-bar {
+    background: blueviolet;
+}
+
+/* For Chrome or Safari */
+.progress-div progress::-webkit-progress-value {
+    background: blueviolet;
+}
+
+/* For IE10 */
+.progress-div progress {
+    background: blueviolet;
 }
