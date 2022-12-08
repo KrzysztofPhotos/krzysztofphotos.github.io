@@ -10,7 +10,7 @@ body {
 }
 
 .screen {
-    background-image: url(blurred\ lake.jpg);
+    background: url();
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -91,4 +91,9 @@ textarea:focus, input:focus{
     font-weight: 50;
     padding-left: 2px;
     letter-spacing: 0.7px;
+}
+
+.clock-screen {
+    width: 100vw;
+
 }
