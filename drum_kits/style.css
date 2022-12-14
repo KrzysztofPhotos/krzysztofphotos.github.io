@@ -16,3 +16,22 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     white-space: nowrap;
 }
+
+.btn {
+    padding: 30px 50px;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-image: url("images/reddrum.png");
+}
+
+.container {
+    text-align: center;
+}
+
+____>>>> 7:37:27 <<<<________
