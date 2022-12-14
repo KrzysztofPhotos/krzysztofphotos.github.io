@@ -10,7 +10,7 @@ body {
 }
 
 .screen {
-    background: url();
+    background: url(wallpaper-blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
