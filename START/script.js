@@ -1,5 +1,5 @@
 // TODO animowany tekst (title) strony w js zmieniający się tekst
-
+// TODO motyw ciemny lub jasny
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
