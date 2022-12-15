@@ -14,7 +14,8 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: aqua;
+    background: rgb(9,0,153);
+    background: linear-gradient(92deg, rgba(9,0,153,1) 0%, rgba(15,15,112,1) 35%, rgba(55,6,168,1) 73%, rgba(0,94,207,1) 100%);
 }
 
 li {
@@ -22,7 +23,7 @@ li {
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -48,6 +49,25 @@ a {
     font-size: 2rem;
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
+    
+}
+
+.nav-link:hover {
+    animation: fromLeft 0.5s easy-in;
+    /* transform: translate(-50px, -50px); */
+    text-decoration: underline;
+}
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav-menu {
@@ -79,10 +99,6 @@ a {
 
 #home {
     margin-top: 70px;
-
-    /* for visual purposes !!! */
-    border: 3px solid black;
-    height: 100vh;
 }
 
 @media(max-width: 1600px){
@@ -112,7 +128,8 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: aqua;
+        background: rgb(9,0,153);
+        background: linear-gradient(92deg, rgba(9,0,153,1) 0%, rgba(15,15,112,1) 35%, rgba(55,6,168,1) 73%, rgba(0,94,207,1) 100%);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -128,6 +145,6 @@ a {
 }
 
 .parallax{
-    height: ;
-    background-color: lime;
+    height: 200vh;
+    background-color: rgb(0, 56, 0);
 }
