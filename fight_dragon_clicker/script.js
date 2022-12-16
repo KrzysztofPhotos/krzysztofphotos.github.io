@@ -4,6 +4,8 @@ const progressBarEl = document.querySelector("#bar");
 
 const labelEl = document.querySelector(".label-drag");
 
+const bar = document.getElementById("bar");
+
 let score = JSON.parse(localStorage.getItem("score"));
 
 if (!score){
@@ -29,6 +31,17 @@ imageEl.addEventListener("click", ()=>{
         progressBarEl.setAttribute("value", score);
     }
 
+
+    if (score < 20){
+        document.bar.style.background = 'red';
+    }
+    else if (score < 60) {
+        document.bar.style.background = 'orange';
+    }
+    else {
+        document.bar.style.background = 'green';
+    }
+    
     //var r = document.querySelector('progress::-webkit-progress-value');
     //var r2 = document.querySelector('progress::-moz-progress-bar');
     // var r3 = document.querySelectorAll('.progress-div');
