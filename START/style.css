@@ -116,13 +116,36 @@ a {
     margin-top: 70px;
 }
 
+
+
 @media(max-width: 1600px){
     .container{
         width: 100%;
     }
+
+    .title h1 {
+        font-family: 'Zen Dots', cursive;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 7em;
+        text-decoration: overline underline;
+    }
 }
 
+
+/* dla tel  */
 @media(max-width: 1024px){
+
+    .title h1 {
+        font-family: 'Zen Dots', cursive;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 1em;
+        text-decoration: overline underline;
+    }
+
     .hamburger {
         display: block;
     }
@@ -267,16 +290,6 @@ a {
 
 .close-icon:hover {
     transform: rotate(40deg);
-}
-
-.title h1 {
-    font-family: 'Zen Dots', cursive;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 7em;
-    text-decoration: overline underline;
-
 }
 
 .element.box1 {
