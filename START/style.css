@@ -284,3 +284,9 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.element.box2 {
+    background-image: url("res/box2/img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
