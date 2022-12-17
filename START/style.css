@@ -122,29 +122,11 @@ a {
     .container{
         width: 100%;
     }
-
-    .title h1 {
-        font-family: 'Zen Dots', cursive;
-        text-align: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        font-size: 7em;
-        text-decoration: overline underline;
-    }
 }
 
 
 /* dla tel  */
 @media(max-width: 1024px){
-
-    .title h1 {
-        font-family: 'Zen Dots', cursive;
-        text-align: center;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        font-size: 1em;
-        text-decoration: overline underline;
-    }
 
     .hamburger {
         display: block;
@@ -245,13 +227,12 @@ a {
     box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 1);
 }
 
-.pop-upContainer1 {
+.pop-upContainer {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(171, 11, 11);
-    width: 70%;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -264,17 +245,28 @@ a {
     flex-direction: column;
 }
 
-.pop-upContainer1 h1{
+@media(min-width: 1024px){
+    .pop-upContainer {
+        width: 70%;
+    }
+}
+@media(max-width: 1023px){
+    .pop-upContainer {
+        width: 100%;
+    }
+}
+
+.pop-upContainer h1{
     font-size: 3.4em;
     font-weight: 600;
 }
 
-.pop-upContainer1 h3{
+.pop-upContainer h3{
     font-size: 2em;
     font-weight: 400;
 }
 
-.active.pop-upContainer1 {
+.active.pop-upContainer {
     visibility: hidden;
     opacity: 0;
 }
@@ -337,4 +329,3 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
-

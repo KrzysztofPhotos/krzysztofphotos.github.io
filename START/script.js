@@ -133,15 +133,28 @@ window.addEventListener('scroll', () => {
 })
 
 
-const btn1 = document.querySelector(".box1");
-const closeIcon1 = document.querySelector(".close-icon");
-const popupContainer1 = document.querySelector(".pop-upContainer1");
 
+const close1 = document.querySelector(".close1");
+const btn1 = document.querySelector(".box1");
+const cont1 = document.querySelector(".cont1");
 
 btn1.addEventListener("click", () => {
-    popupContainer1.classList.remove("active");
+    cont1.classList.remove("active");
 })
 
-closeIcon1.addEventListener("click", () => {
-    popupContainer1.classList.add("active");
+close1.addEventListener("click", () => {
+    cont1.classList.add("active");
+})
+
+
+const close2 = document.querySelector(".close2");
+const btn2 = document.querySelector(".box2");
+const cont2 = document.querySelector(".cont2");
+
+btn2.addEventListener("click", () => {
+    cont2.classList.remove("active");
+})
+
+close2.addEventListener("click", () => {
+    cont2.classList.add("active");
 })
