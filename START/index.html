@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my site</title>
-    <link rel="stylesheet" href="res/styles/animatedbutton.css">
     <link rel="stylesheet" href="res/styles/style.css">
+    <link rel="stylesheet" href="res/styles/animatedbutton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap" rel="stylesheet">
@@ -104,17 +104,16 @@
         <h1>Windows 11 Login Form</h1>
         <h3>Screen which looks very similar to original windows 11 login</h3>
         <div class="div-close-icon close1"><i class="fa-solid fa-xmark fa-3x close-icon"></i></div>
-        <!-- <div class="video"> -->
             <video class="video" id="video1" loop muted autoplay src="res/box1/video.mp4"></video>
-        <!-- </div> -->
-        <div class="redBtn"><a href="#" class="btn"><span>Button</span></a></div>
+        <button class="animatedBtn" data-text="CLICK" onclick="location.href='http://google.com';">
+            <span>OPEN PROJECT</span>
+        </button>
     </div>
     <div class="pop-upContainer active cont2">
         <h1>Heart Trail Animation</h1>
         <h3>Animation after hover entire screen</h3>
         <div class="div-close-icon close2"><i class="fa-solid fa-xmark fa-3x close-icon"></i></div>
         <div class="video">VIDEO.MP4 (without any controls, playing in loop)</div>
-        <div class="redBtn">OPEN</div>
     </div>
 
     <script src="res/scripts/script.js"></script>
