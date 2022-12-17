@@ -1,9 +1,18 @@
 body {
     margin: 0;
-    padding: 0;
+}
+
+.screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
 .block {
     width:1px;
     height: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
 }
