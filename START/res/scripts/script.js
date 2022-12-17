@@ -3,7 +3,7 @@
 // TODO animation or video as background
 // TODO ANIMACJA TEKSTU NA DIVIE KTÓRY MA BLURA
 // PO NAJECHANIU NA DANY ELEMENT ON SIE TROCHE POWIEKSZA A WSZYSTKO INNE DOSTAJE BLURA AŻ DO NAJECHANIA GDZIES POZA DANEGO DIVA Z BLOKÓW...
-
+// TODO ANIMATED GRADIENT BACKGROUND POP UP ELEMENT
 //TODO BLUR TO ALL OTHER ELEMENTS WHILE YOU'VE OPEN THE WINDOW
 //TODO ANIMATION WHILE YOU OPEN WINDOW >>> ON CLICK ANIMATION FROM LEFT (when element clicked)
 //                                     >>> ON CLICK ANIMATION TO RIGHT (when X clicked)
@@ -144,6 +144,7 @@ const cont1 = document.querySelector(".cont1");
 
 btn1.addEventListener("click", () => {
     cont1.classList.remove("active");
+
 })
 
 close1.addEventListener("click", () => {
