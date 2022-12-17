@@ -2,15 +2,12 @@
 console.log("Height: " + window.screen.availHeight);
 console.log("Width: " + window.screen.availWidth);
 
-how_many_px = window.screen.availWidth * window.screen.availHeight;
+
+// If you want the amount of random pixels same as your screen resolution delete / 100 below 
+// and change in CSS file pixel to 1px :)
+how_many_px = window.screen.availWidth * window.screen.availHeight / 100;
 
 console.log("JS have to generate " + how_many_px + " pixels.");
-
-// for(i=0; i<how_many_px; i++) {
-//     // console.log(i);
-// }
-
-
 
 const containerEl = document.querySelector(".screen");
 
