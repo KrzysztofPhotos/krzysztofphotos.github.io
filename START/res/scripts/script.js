@@ -168,15 +168,15 @@ function wysun(i){
 }
 
 close1.addEventListener("click", () => {
-    //cont1.classList.add("active");
+    
 
     for (let i = 1; i <= 50; i++) {
         setTimeout(() => {
             wysun(i);
         }, 3 * i);
     }
-    console.log("schowane");
     hideBlur();
+    setTimeout(() => {cont1.classList.add("active"); }, 200);
 })
 
 
@@ -195,8 +195,6 @@ close2.addEventListener("click", () => {
 
 // poprawka dla android
 document.getElementById('vid').play();
-
-
 
 function addBlur(){
     //querySelector
