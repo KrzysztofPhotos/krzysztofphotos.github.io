@@ -167,3 +167,13 @@ close2.addEventListener("click", () => {
 
 // poprawka dla android
 document.getElementById('vid').play();
+
+function addBlur(){
+    //querySelector
+    //na wszystkie elementy  dodaj  klase blur
+}
+
+function hideBlur(){
+    //query  selector
+    // na wszystkich elementach podanych usun klase  blur
+}
