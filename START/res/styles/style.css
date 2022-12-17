@@ -167,7 +167,7 @@ a {
 
 .parallax{
     height: 70vh;    
-    background-image: url("bg2.jpg");
+    background-image: url("/START/res/img/bg2.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,13 +344,13 @@ a {
 }
 
 .element.box1 {
-    background-image: url("res/box1/image.jpg");
+    background-image: url("/START/res/box1/image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .element.box2 {
-    background-image: url("res/box2/img.png");
+    background-image: url("/START/res/box2/img.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
