@@ -245,9 +245,9 @@ a {
     transition: opacity 0.5s;
 }
 
-.video {
-    background-color: purple;
-}
+/* .video {
+    background-color: rgb(128, 0, 0);
+} */
 
 /* WINDOWS */
 @media(min-width: 1100px){
