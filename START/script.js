@@ -158,3 +158,7 @@ btn2.addEventListener("click", () => {
 close2.addEventListener("click", () => {
     cont2.classList.add("active");
 })
+
+
+// poprawka dla android
+document.getElementById('vid').play();
