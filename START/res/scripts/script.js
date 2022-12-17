@@ -141,27 +141,42 @@ const cont1 = document.querySelector(".cont1");
 
 btn1.addEventListener("click", () => {
     cont1.classList.remove("active");
-    //cont1.setAttribute("left", "10%");
-    // for(i=0; i<50; i++){
-    //     setTimeout(() => {  console.log("World!"); }, 5000);
 
-    // }
-    let i = 1;
-    const interval = setInterval(() => {
-    //cont1.setAttribute("left", "10%")
-    console.log(i);
-    ; i++;
-    if (i > 50) {
-        clearInterval(interval);
-    }
-    }, 8);
+    console.log("kliknieto");
+    for (let i = 1; i <= 50; i++) {
+        setTimeout(() => {
+            przesun(i);
+        }, 3 * i);
+      }
     addBlur();
-
 })
 
+function przesun(i){
+    var numb = i + "%";
+    cont1.style.left = numb;
+
+    var opacity_num = i * 2/100;
+    cont1.style.opacity = opacity_num;
+}
+
+function wysun(i){
+    var numb = 50 + i + "%";
+    cont1.style.left = numb;
+
+    var opacity_num = 1.00 + (i-1)*(-0.02);
+    cont1.style.opacity = opacity_num;
+}
+
 close1.addEventListener("click", () => {
-    cont1.classList.add("active");
-    hideBlur()
+    //cont1.classList.add("active");
+
+    for (let i = 1; i <= 50; i++) {
+        setTimeout(() => {
+            wysun(i);
+        }, 3 * i);
+    }
+    console.log("schowane");
+    hideBlur();
 })
 
 
