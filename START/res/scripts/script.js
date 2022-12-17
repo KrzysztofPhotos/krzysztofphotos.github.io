@@ -144,6 +144,7 @@ const cont1 = document.querySelector(".cont1");
 
 btn1.addEventListener("click", () => {
     cont1.classList.remove("active");
+    cont1.classList.remove("fromLeftAnimation");
     addBlur();
 
 })

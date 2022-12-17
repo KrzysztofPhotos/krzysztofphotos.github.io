@@ -268,17 +268,18 @@ a {
   }
 
 .fromLeftAnimation {
-    animation: fade-Left 0.4s infinite;
-    /* animation-fill-mode: forwards; */
+    /* animation: fade-Left 0.4s infinite; */
+    animation: fade-Left 0.4s;
+    animation-fill-mode: forwards;
 }
 
   @keyframes fade-left {
     0% {
-      transform: translateX(-500px);
+        transform: translate(-200px, -50%);
       opacity: 0;
     }
     100% {
-      transform: translateX(0);
+        transform: translate(-50%, -50%);
       opacity: 1;
     }
   }
@@ -368,8 +369,8 @@ a {
 
 .active.pop-upContainer {
     visibility: hidden;
-    /* transform: translateX(-50%);
-    opacity: 0; */
+    transform: translateX(-50%);
+    /* opacity: 0; */
 }
 
 .close-icon {
