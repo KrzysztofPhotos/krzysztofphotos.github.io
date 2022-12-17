@@ -144,11 +144,13 @@ const cont1 = document.querySelector(".cont1");
 
 btn1.addEventListener("click", () => {
     cont1.classList.remove("active");
+    addBlur();
 
 })
 
 close1.addEventListener("click", () => {
     cont1.classList.add("active");
+    hideBlur()
 })
 
 
@@ -157,7 +159,7 @@ const btn2 = document.querySelector(".box2");
 const cont2 = document.querySelector(".cont2");
 
 btn2.addEventListener("click", () => {
-    cont2.classList.remove("active");
+    cont2.classList.remove("active")
 })
 
 close2.addEventListener("click", () => {
@@ -168,12 +170,30 @@ close2.addEventListener("click", () => {
 // poprawka dla android
 document.getElementById('vid').play();
 
+
+
 function addBlur(){
     //querySelector
     //na wszystkie elementy  dodaj  klase blur
+    const toBlur1 = document.querySelector(".container-elements");
+    const toBlur2 = document.querySelector(".title");
+    const toBlur3 = document.querySelector(".parallax");
+    const toBlur4 = document.querySelector(".navbar");
+    toBlur1.classList.add("blur");
+    toBlur2.classList.add("blur");
+    toBlur3.classList.add("blur");
+    toBlur4.classList.add("blur");
 }
 
 function hideBlur(){
     //query  selector
     // na wszystkich elementach podanych usun klase  blur
+    const toBlur1 = document.querySelector(".container-elements");
+    const toBlur2 = document.querySelector(".title");
+    const toBlur3 = document.querySelector(".parallax");
+    const toBlur4 = document.querySelector(".navbar");
+    toBlur1.classList.remove("blur");
+    toBlur2.classList.remove("blur");
+    toBlur3.classList.remove("blur");
+    toBlur4.classList.remove("blur");
 }

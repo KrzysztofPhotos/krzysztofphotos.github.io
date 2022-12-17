@@ -238,7 +238,7 @@ a {
     background: linear-gradient(-45deg, rgba(9,0,153,1) 0%, rgb(34, 84, 200) 25%, rgba(28,15,112,1) 68%, rgb(76, 0, 255) 100%);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-
+    box-shadow: 0px 0px 2px 3px rgba(0, 8, 78, 0.1);
     height: 70%;
     display: flex;
     justify-content: center;
@@ -258,8 +258,44 @@ a {
 }
 
 .blur {
-    filter: blur(20px);
+    animation: blurred 0.4s;
+    animation-fill-mode: forwards;
 }
+
+@keyframes blurred {
+    0%  { filter: blur(0px); }
+    100% { filter: blur(10px); }
+  }
+
+.fromLeftAnimation {
+    animation: fade-Left 0.4s infinite;
+    /* animation-fill-mode: forwards; */
+}
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(500px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
 
 @keyframes gradient {
 	0% {
@@ -286,10 +322,14 @@ a {
     .pop-upContainer h1{
         font-size: 3.4em;
         font-weight: 600;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     .pop-upContainer h3{
         font-size: 1.7em;
         font-weight: 400;
+        margin-left: 4%;
+        margin-right: 4%;
     }
     .video {
         margin-top: 2%;
@@ -397,25 +437,3 @@ a {
     background-size: cover;
     text-shadow: 5px 5px 1px rgba(0, 0, 0, 1);
 }
-
-@keyframes fade-left {
-    0% {
-      transform: translateX(-500px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-right {
-    0% {
-      transform: translateX(500px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
