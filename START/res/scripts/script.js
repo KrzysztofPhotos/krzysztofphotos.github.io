@@ -4,6 +4,10 @@
 // TODO ANIMACJA TEKSTU NA DIVIE KTÓRY MA BLURA
 // PO NAJECHANIU NA DANY ELEMENT ON SIE TROCHE POWIEKSZA A WSZYSTKO INNE DOSTAJE BLURA AŻ DO NAJECHANIA GDZIES POZA DANEGO DIVA Z BLOKÓW...
 
+//TODO BLUR TO ALL OTHER ELEMENTS WHILE YOU'VE OPEN THE WINDOW
+//TODO ANIMATION WHILE YOU OPEN WINDOW >>> ON CLICK ANIMATION FROM LEFT (when element clicked)
+//                                     >>> ON CLICK ANIMATION TO RIGHT (when X clicked)
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
