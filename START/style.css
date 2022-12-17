@@ -292,6 +292,15 @@ a {
     transform: rotate(40deg);
 }
 
+.title h1  {
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    font-family: 'Zen Dots', cursive;
+    text-decoration: underline overline;
+    text-align: center;
+    font-size: 6vw;
+}
+
 .element.box1 {
     background-image: url("res/box1/image.jpg");
     background-repeat: no-repeat;
@@ -303,3 +312,4 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
