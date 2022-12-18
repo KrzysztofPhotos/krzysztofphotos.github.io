@@ -104,3 +104,19 @@ function changeVisibilty(i){
     iconsEl.style.opacity = i * 2/100;
 }
 
+function checkPin(){
+    let textArea = document.getElementById("id-input");
+    if (textArea.value.length == 4){
+        console.log(document.getElementById('id-input').value);
+        if(document.getElementById('id-input').value == 2137){
+            console.log("WLACZ WINDOWSA -> PRZEKIERUJ NA NOWA STRONE");
+        }
+        else{
+            
+            setTimeout(() => {
+                alert("The PIN is incorrect. Try again.");
+                textArea.value="";
+            }, 150);
+        }
+    }
+}
