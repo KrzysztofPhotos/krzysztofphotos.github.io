@@ -11,3 +11,9 @@ function keyWasPressed(){
         console.log("great")
     }
 }
+
+
+
+
+const elements = document.querySelector(".elements");
+elements.classList.add("hideElement");
