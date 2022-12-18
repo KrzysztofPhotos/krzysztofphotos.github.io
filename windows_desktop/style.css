@@ -21,14 +21,19 @@ body {
 
 .taskbar-icon {
     background-color: rgba(255, 0, 0, 0);
-    height: 100%;
-    margin: 0 0.1% 0 0.1%;
-    /* display: block; */
+    height: 85%;
+    margin: auto 0.1% auto 0.1%;
+    top: 50%;
+    -webkit-transition: all 0.15s ease-in;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
 }
 
 .taskbar-icon:hover {
     background-color: rgba(0, 0, 0, 0.242);
-    border-radius: 10px;
+    border-radius: 8px;
+    transform: scale(90%);
 }
 
 .taskbar-icon img {
