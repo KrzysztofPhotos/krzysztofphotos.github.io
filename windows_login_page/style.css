@@ -141,6 +141,7 @@ textarea:focus, input:focus{
 }
 
 .icons {
+    opacity: 0;
     position: fixed;
     bottom: 1%;
     right: 1%;
@@ -148,7 +149,21 @@ textarea:focus, input:focus{
 
 .icon {
     display: inline-block;
-    background-color: rgb(213, 50, 50);
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 2.5vh;
+    height: 2.5vh;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    transition: background-color 0.3s easy;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.icon:hover {
+    background-color: rgb(104, 104, 104);
+}
+
+.icon img {
+    width: 100%;
 }

@@ -15,7 +15,7 @@ function keyWasPressed(){
 }
 
 const elementsEl = document.querySelector(".elements");
-//elementsEl.classList.add("hideElement");
+const iconsEl = document.querySelector(".icons");
 
 
 // SCRIPT WHICH RELOAD ACTUAL HOUR
@@ -71,4 +71,5 @@ clockScr.addEventListener("click", () => {
 
 function changeVisibilty(i){
     elementsEl.style.opacity = i * 2/100;
+    iconsEl.style.opacity = i * 2/100;
 }
