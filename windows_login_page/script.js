@@ -17,3 +17,24 @@ function keyWasPressed(){
 
 const elements = document.querySelector(".elements");
 elements.classList.add("hideElement");
+
+// SCRIPT WHICH RELOAD ACTUAL HOUR
+const hourEl = document.getElementById("godz");
+
+function updateClock(){
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+
+    if(m < 10){
+        m = "0" + m;
+    }
+
+    time = h + ":" + m;
+    hourEl.innerText = time;
+
+    setTimeout(()=>{
+        updateClock();
+    }, 1000)
+} 
+
+updateClock();

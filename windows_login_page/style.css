@@ -104,11 +104,12 @@ textarea:focus, input:focus{
     display: none;
 }
 
-.godz {
+.godz{ 
     color: white;
     font-size: 7em;
     font-weight: 500;
     margin: 0;
+    display: inline-block;
 }
 
 .date {
