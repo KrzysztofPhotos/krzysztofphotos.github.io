@@ -1,3 +1,8 @@
+window.addEventListener('focus', function() {
+    document.getElementById("startup_sound").play();
+    console.log("odwtworz dzwiek");
+  });
+
 function keyWasPressed(){
     // const inputEl = document.querySelector('.input-pin').value;
     var inputEl = document.getElementById("id-input").value;
@@ -58,3 +63,4 @@ clockScr.addEventListener("click", () => {
         }, 0.3 * i);
     }
 })
+
