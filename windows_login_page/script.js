@@ -30,7 +30,7 @@ function updateClock(){
     time = h + ":" + m;
     hourEl.innerText = time;
 
-    
+
     // CHANGE DATE
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const d = new Date();
@@ -50,3 +50,27 @@ function updateClock(){
 updateClock();
 
 
+
+// let screenHeight = window.screen.availHeight;
+// console.log(screenHeight);
+
+// function animateClockScreen(){
+// const clockScr = document.querySelector(".clock-screen");
+//     for(i=0; i < window.screen.availHeight; i++){
+//         div.style.transform = "translate(0,-" + i + "px)"
+//         console.log("elo");
+//     }
+//     setTimeout(()=>{
+//         animateClockScreen();
+//     }, 500)
+// } 
+// animateClockScreen();
+const clockScr = document.querySelector(".clock-screen");
+clockScr.addEventListener("click", () => {
+
+    for (let i = 1; i <= window.screen.availHeight; i++) {
+        setTimeout(() => {
+            clockScr.style.transform = "translate(0,-" + i + "%)";
+        }, 4 * i);
+    }
+})

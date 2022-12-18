@@ -10,7 +10,7 @@ body {
 }
 
 .screen {
-    background: url(wallpaper-blur.jpg);
+    background: url(wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -96,8 +96,9 @@ textarea:focus, input:focus{
 .clock-screen {
     width: 100vw;
     height: 100vh;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     position: fixed;
+    transform: translateY();
 }
 
 .hideElement {
