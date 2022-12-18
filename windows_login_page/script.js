@@ -50,10 +50,18 @@ function updateClock(){
 } 
 updateClock();
 
+
 // SCRIPT WHICH OPEN LOGIN SCREEN
+var ifClicked = 0;
+console.log("ifClciked przed kliknieciem");
+scrRed = document.querySelector(".screen");
+bgToHide = document.querySelector(".image-normal");
 const clockScr = document.querySelector(".clock-screen");
-clockScr.addEventListener("click", () => {
+scrRed.addEventListener("click", () => {
+    if(ifClicked === 0){
     document.getElementById("startup_sound").play();
+    ifClicked = 1;
+    console.log(ifClicked);
     for (let i = 1; i <= window.screen.availHeight; i++) {
         setTimeout(() => {
             clockScr.style.transform = "translate(0,-" + i + "px)";
@@ -67,9 +75,29 @@ clockScr.addEventListener("click", () => {
         }
 
     }, 1000);
-})
+    setTimeout(() => {
+        for (let i = 1; i <= 50; i++) {
+            setTimeout(() => {
+                changeVisibilty(i);
+            }, 20 * i);
+        }
+
+    }, 1000);
+
+    // BLUR TŁA
+    setTimeout(() => {
+        for (let i = 1; i <= 100; i++) {
+            setTimeout(() => {
+                bgToHide.style.opacity = 100 + (i-1)*(-1) + "%";
+            }, 10 * i);
+        }
+    
+    }, 500);
+}})
+
 
 function changeVisibilty(i){
     elementsEl.style.opacity = i * 2/100;
     iconsEl.style.opacity = i * 2/100;
 }
+

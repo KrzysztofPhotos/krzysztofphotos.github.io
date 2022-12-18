@@ -10,15 +10,17 @@ body {
 }
 
 .screen {
-    background: url(res/img/wallpaper.jpg);
+    /* background: url(res/img/wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;  */
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
+    position: fixed;
+    z-index: 0;
 }
 
 .elements {
@@ -166,4 +168,34 @@ textarea:focus, input:focus{
 
 .icon img {
     width: 100%;
+}
+
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.image-normal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url(res/img/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    opacity: 100%;
+}
+
+.image-blurred {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(res/img/wallpaper-blur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
 }
