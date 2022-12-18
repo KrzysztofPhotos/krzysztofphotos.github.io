@@ -113,8 +113,8 @@ textarea:focus, input:focus{
 }
 
 .date {
-    margin-top: 2%;
     font-weight: 500;
+    font-size: 1.3em;
 }
 
 .centerclock{
