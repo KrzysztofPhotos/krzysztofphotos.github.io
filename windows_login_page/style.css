@@ -26,6 +26,7 @@ body {
     height: 14vw;
     position: fixed;
     text-align: center;
+    opacity: 0;
 }
 
 
@@ -126,7 +127,7 @@ textarea:focus, input:focus{
 }
 
 .clock-corner {
-    height: 3vh;
+    height: 2.5vh;
     position: absolute;
     justify-content: right;
     right: 1%;

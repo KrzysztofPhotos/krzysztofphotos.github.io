@@ -14,8 +14,8 @@ function keyWasPressed(){
     }
 }
 
-const elements = document.querySelector(".elements");
-elements.classList.add("hideElement");
+const elementsEl = document.querySelector(".elements");
+//elementsEl.classList.add("hideElement");
 
 
 // SCRIPT WHICH RELOAD ACTUAL HOUR
@@ -59,5 +59,16 @@ clockScr.addEventListener("click", () => {
             clockScr.style.transform = "translate(0,-" + i + "px)";
         }, 0.3 * i);
     }
+    setTimeout(() => {
+        for (let i = 1; i <= 50; i++) {
+            setTimeout(() => {
+                changeVisibilty(i);
+            }, 20 * i);
+        }
+
+    }, 1000);
 })
 
+function changeVisibilty(i){
+    elementsEl.style.opacity = i * 2/100;
+}
