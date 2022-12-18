@@ -95,6 +95,7 @@ function checkPin(){
         console.log(document.getElementById('id-input').value);
         if(document.getElementById('id-input').value == 2137){
             console.log("WLACZ WINDOWSA -> PRZEKIERUJ NA NOWA STRONE");
+            window.open("../windows_desktop/index.html","_self");
         }
         else{
             setTimeout(() => {
