@@ -53,16 +53,15 @@ updateClock();
 
 // SCRIPT WHICH OPEN LOGIN SCREEN
 var ifClicked = 0;
-console.log("ifClciked przed kliknieciem");
-scrRed = document.querySelector(".screen");
-bgToHide = document.querySelector(".image-normal");
+const scrRed = document.querySelector(".screen");
+const bgToHide = document.querySelector(".image-normal");
 const clockScr = document.querySelector(".clock-screen");
 scrRed.addEventListener("click", () => {
     if(ifClicked === 0){
     document.getElementById("startup_sound").play();
     ifClicked = 1;
     console.log(ifClicked);
-    for (let i = 1; i <= window.screen.availHeight; i++) {
+    for (let i = 1; i <= window.screen.availHeight+500; i++) {
         setTimeout(() => {
             clockScr.style.transform = "translate(0,-" + i + "px)";
         }, 0.3 * i);
@@ -93,6 +92,10 @@ scrRed.addEventListener("click", () => {
         }
     
     }, 500);
+    setTimeout(() => {
+        console.log("Znika clock screen");
+        clockScr.classList.add("hideElement");
+    }, 1500);
 }})
 
 
