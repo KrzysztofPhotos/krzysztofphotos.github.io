@@ -54,7 +54,7 @@ body {
 .desktop {
     height: 95.5%;
     width: 100vw;
-    background-color: rgb(0, 17, 53);
+    /* background-color: rgb(0, 17, 53); */
 }
 
 .icons {
@@ -67,23 +67,36 @@ body {
 .icon-el{
     /* min-height: 10px; */
     height: 3.5vw;  
-    background-color: rgba(255, 0, 0, 0.286);
+    background-color: rgba(255, 0, 0, 0);
     padding: 0.3vh;
     padding-bottom: 1vh;
     margin: 0.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
+    max-width: 112px;
+    cursor: context-menu;
+    text-align: center;
 }
 
 .icon-el:hover {
-    
+    background-color: rgba(255, 255, 255, 0.221);
 }
 
 .icon-el p {
     margin-top: -3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
+    color: white;
+}
+
+.empty {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.empty:hover {
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .icon-column {
