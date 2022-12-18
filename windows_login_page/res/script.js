@@ -1,19 +1,4 @@
 
-
-function keyWasPressed(){
-    // const inputEl = document.querySelector('.input-pin').value;
-    var inputEl = document.getElementById("id-input").value;
-
-    console.log(inputEl);
-
-    // let inputLen = inputEl.lenght;
-    // console.log(inputLen);
-
-    if (inputEl == "3") {
-        console.log("great")
-    }
-}
-
 const elementsEl = document.querySelector(".elements");
 const iconsEl = document.querySelector(".icons");
 
@@ -38,7 +23,7 @@ function updateClock(){
     const d = new Date();
     let Strdate = weekday[d.getDay()];
     let day = d.getDate();
-    const months  = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    const months  = ["January","February","March","April","May","June","July","August","September","October","November","December"];
     let month = months[d.getMonth()];
 
     dateEl.innerText = Strdate + ", " + day + " " + month;
@@ -112,7 +97,6 @@ function checkPin(){
             console.log("WLACZ WINDOWSA -> PRZEKIERUJ NA NOWA STRONE");
         }
         else{
-            
             setTimeout(() => {
                 alert("The PIN is incorrect. Try again.");
                 textArea.value="";
