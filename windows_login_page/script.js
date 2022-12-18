@@ -12,14 +12,12 @@ function keyWasPressed(){
     }
 }
 
-
-
-
 const elements = document.querySelector(".elements");
 elements.classList.add("hideElement");
 
 // SCRIPT WHICH RELOAD ACTUAL HOUR
 const hourEl = document.getElementById("godz");
+const dateEl = document.getElementById("date");
 
 function updateClock(){
     let h = new Date().getHours();
@@ -32,9 +30,23 @@ function updateClock(){
     time = h + ":" + m;
     hourEl.innerText = time;
 
+    
+    // CHANGE DATE
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const d = new Date();
+    let Strdate = weekday[d.getDay()];
+    let day = d.getDate();
+    const months  = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    let month = months[d.getMonth()];
+
+    dateEl.innerText = Strdate + ", " + day + " " + month;
+
+    
     setTimeout(()=>{
         updateClock();
     }, 1000)
 } 
 
 updateClock();
+
+
