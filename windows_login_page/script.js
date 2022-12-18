@@ -1,7 +1,4 @@
-window.addEventListener('focus', function() {
-    document.getElementById("startup_sound").play();
-    console.log("odwtworz dzwiek");
-  });
+
 
 function keyWasPressed(){
     // const inputEl = document.querySelector('.input-pin').value;
@@ -56,7 +53,7 @@ updateClock();
 // SCRIPT WHICH OPEN LOGIN SCREEN
 const clockScr = document.querySelector(".clock-screen");
 clockScr.addEventListener("click", () => {
-
+    document.getElementById("startup_sound").play();
     for (let i = 1; i <= window.screen.availHeight; i++) {
         setTimeout(() => {
             clockScr.style.transform = "translate(0,-" + i + "px)";
