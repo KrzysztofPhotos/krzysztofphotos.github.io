@@ -122,3 +122,16 @@ textarea:focus, input:focus{
     flex-direction: column;
     text-align: center;
 }
+
+.clock-corner {
+    height: 3.4vh;
+    position: absolute;
+    justify-content: right;
+    right: 1%;
+    bottom: 2%;
+}
+
+.clock-corner img {
+    height: 100%;
+    float: right;
+}
