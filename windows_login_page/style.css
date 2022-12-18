@@ -139,3 +139,16 @@ textarea:focus, input:focus{
     height: 100%;
     float: right;
 }
+
+.icons {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+}
+
+.icon {
+    display: inline-block;
+    background-color: rgb(213, 50, 50);
+    width: 2.5vw;
+    height: 2.5vw;
+}
