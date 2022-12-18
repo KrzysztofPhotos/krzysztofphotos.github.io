@@ -126,11 +126,12 @@ textarea:focus, input:focus{
 }
 
 .clock-corner {
-    height: 3.4vh;
+    height: 3vh;
     position: absolute;
     justify-content: right;
     right: 1%;
     bottom: 2%;
+    opacity: 0.8;
 }
 
 .clock-corner img {

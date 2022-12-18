@@ -15,10 +15,10 @@ function keyWasPressed(){
 const elements = document.querySelector(".elements");
 elements.classList.add("hideElement");
 
+
 // SCRIPT WHICH RELOAD ACTUAL HOUR
 const hourEl = document.getElementById("godz");
 const dateEl = document.getElementById("date");
-
 function updateClock(){
     let h = new Date().getHours();
     let m = new Date().getMinutes();
@@ -46,31 +46,15 @@ function updateClock(){
         updateClock();
     }, 1000)
 } 
-
 updateClock();
 
-
-
-// let screenHeight = window.screen.availHeight;
-// console.log(screenHeight);
-
-// function animateClockScreen(){
-// const clockScr = document.querySelector(".clock-screen");
-//     for(i=0; i < window.screen.availHeight; i++){
-//         div.style.transform = "translate(0,-" + i + "px)"
-//         console.log("elo");
-//     }
-//     setTimeout(()=>{
-//         animateClockScreen();
-//     }, 500)
-// } 
-// animateClockScreen();
+// SCRIPT WHICH OPEN LOGIN SCREEN
 const clockScr = document.querySelector(".clock-screen");
 clockScr.addEventListener("click", () => {
 
     for (let i = 1; i <= window.screen.availHeight; i++) {
         setTimeout(() => {
-            clockScr.style.transform = "translate(0,-" + i + "%)";
-        }, 4 * i);
+            clockScr.style.transform = "translate(0,-" + i + "px)";
+        }, 0.3 * i);
     }
 })
