@@ -10,7 +10,7 @@ body {
 }
 
 .screen {
-    background: url(wallpaper.jpg);
+    background: url(res/img/wallpaper.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; 
@@ -33,7 +33,7 @@ body {
 .logo {
     width: 75%;
     height: 75%;
-    background: url(avatar.png);
+    background: url(res/img/avatar.png);
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 50%;
