@@ -50,3 +50,32 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.desktop {
+    height: 95.5%;
+    width: 100vw;
+    background-color: rgb(0, 17, 53);
+}
+
+.icons {
+    /* height: 100%; */
+    width: 100vw;
+    flex-direction: row;
+    display: flex;
+}
+
+.icon-el{
+    width: 10vw;
+    height: 100px;  
+    background-color: red;
+    margin: 0.3vh;
+}
+
+.icon-column {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    /* margin: 1%; */
+    padding-left: 0.5vh;
+    padding-top: 0.5vh;
+}
