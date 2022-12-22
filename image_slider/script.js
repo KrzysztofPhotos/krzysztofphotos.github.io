@@ -1,21 +1,28 @@
 const nextEl = document.querySelector(".next");
 
-const imgsEl = document.querySelectorAll("img");
+const prevEl = document.querySelector(".prev");
 
-console.log(imgsEl);
+const imgsEl = document.querySelectorAll("img");
 
 const imageContainerEl = document.querySelector(".image-container");
 
-let currectImg = 1;
+let currentImg = 1;
 
 nextEl.addEventListener("click", () => {
-    currectImg++;
+    currentImg++;
+    updateImg();
+})
+
+prevEl.addEventListener("click", () => {
+    currentImg--;
     updateImg();
 })
 
 function updateImg(){
-    if(currectImg > imgsEl.length){
-        currectImg = 1;
+    if(currentImg > imgsEl.length){
+        currentImg = 1;
+    }else if(currentImg < 1){
+        currentImg = imgsEl.length;
     }
-    imageContainerEl.style.transform = `translateX(-${(currectImg - 1) * 1000}px)`
+    imageContainerEl.style.transform = `translateX(-${(currentImg - 1) * 1000}px)`
 }
