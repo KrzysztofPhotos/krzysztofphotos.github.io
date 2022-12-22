@@ -25,3 +25,87 @@
     text-shadow: 5px 5px 1px rgba(0, 0, 0, 1);
     text-align: center;
 }
+
+.element.box5 {
+    background-image: url("/START/res/box5/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box6 {
+    background-image: url("/START/res/box6/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box7 {
+    background-image: url("/START/res/box7/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box8 {
+    background-image: url("/START/res/box8/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box9 {
+    background-image: url("/START/res/box9/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box10 {
+    background-image: url("/START/res/box10/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box11 {
+    background-image: url("/START/res/box11/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box12 {
+    background-image: url("/START/res/box12/img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box13 {
+    background-image: url("/START/res/box13/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box14 {
+    background-image: url("/START/res/box14/img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box15 {
+    background-image: url("/START/res/box15/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.element.box16 {
+    background-image: url("/START/res/box16/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
