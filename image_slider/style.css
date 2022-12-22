@@ -18,7 +18,7 @@ body{
 
 .image-container {
     display: flex;
-    transform: translateX(-1000px);
+    /* transform: translateX(-1000px); */
 }
 
 .btn {
