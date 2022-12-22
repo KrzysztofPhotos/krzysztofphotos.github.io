@@ -76,6 +76,34 @@ const close10 = document.querySelector(".close10");
 const btn10 = document.querySelector(".box10");
 const cont10 = document.querySelector(".cont10");
 
+const close11 = document.querySelector(".close11");
+const btn11 = document.querySelector(".box11");
+const cont11 = document.querySelector(".cont11");
+
+const close12 = document.querySelector(".close12");
+const btn12 = document.querySelector(".box12");
+const cont12 = document.querySelector(".cont12");
+
+const close13 = document.querySelector(".close13");
+const btn13 = document.querySelector(".box13");
+const cont13 = document.querySelector(".cont13");
+
+const close14 = document.querySelector(".close14");
+const btn14 = document.querySelector(".box14");
+const cont14 = document.querySelector(".cont14");
+
+const close15 = document.querySelector(".close15");
+const btn15 = document.querySelector(".box15");
+const cont15 = document.querySelector(".cont15");
+
+const close16 = document.querySelector(".close16");
+const btn16 = document.querySelector(".box16");
+const cont16 = document.querySelector(".cont16");
+
+const close17 = document.querySelector(".close17");
+const btn17 = document.querySelector(".box17");
+const cont17 = document.querySelector(".cont17");
+
 ////////////////////////////////////////////////////////////////////////////
 
 function openClick(containerEl){
@@ -128,3 +156,21 @@ close9.addEventListener("click", () => {closeClick(cont9);})
 
 btn10.addEventListener("click", () => {openClick(cont10);})
 close10.addEventListener("click", () => {closeClick(cont10);})
+
+btn11.addEventListener("click", () => {openClick(cont11);})
+close11.addEventListener("click", () => {closeClick(cont11);})
+
+btn12.addEventListener("click", () => {openClick(cont12);})
+close12.addEventListener("click", () => {closeClick(cont12);})
+
+btn13.addEventListener("click", () => {openClick(cont13);})
+close13.addEventListener("click", () => {closeClick(cont13);})
+
+btn14.addEventListener("click", () => {openClick(cont14);})
+close14.addEventListener("click", () => {closeClick(cont14);})
+
+btn15.addEventListener("click", () => {openClick(cont15);})
+close15.addEventListener("click", () => {closeClick(cont15);})
+
+btn16.addEventListener("click", () => {openClick(cont16);})
+close16.addEventListener("click", () => {closeClick(cont16);})
