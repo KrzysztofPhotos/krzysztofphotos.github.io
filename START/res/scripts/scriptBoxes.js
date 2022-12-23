@@ -108,7 +108,6 @@ const cont17 = document.querySelector(".cont17");
 
 function openClick(containerEl){
     containerEl.classList.remove("active");
-    console.log("kliknieto"+ containerEl);
     for (let i = 1; i <= 50; i++) {
         setTimeout(() => {
             przesun(i, containerEl);

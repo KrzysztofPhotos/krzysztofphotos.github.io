@@ -133,6 +133,4 @@ window.addEventListener('scroll', () => {
     }
 })
 
-// poprawka dla android
-document.getElementById('vid').play();
 
