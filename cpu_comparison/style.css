@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 44, 0);
+}
+
+/* .table {
+    border: 1px solid black;
+} */
+
+table {
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #8ebf42;
+    background-color: #d9d9d9;
+
+    border-collapse: separate;
+    border-spacing: 0;
+    border-top: 1px solid grey;
+}
+
+th {
+    border: 2px solid #095484;
+}
+
+td {
+    border: 2px groove #1c87c9;
+}
+
