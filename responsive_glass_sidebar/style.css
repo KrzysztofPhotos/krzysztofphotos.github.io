@@ -43,4 +43,6 @@ body {
     margin-top: 12px;
     font-variant: small-caps;
     pointer-events: none;
+    opacity: 0;
 }
+
