@@ -1,4 +1,28 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar .logo {
+    display: none;
+}
+
+.sidebar {
+    width: 120px;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    background: rgba(10,10,10,.65);
+    box-shadow: 0 8px 32px rgb(2, 4, 24);
+    border-right: 2px solid rgba(255, 255, 255, .09);
 }
