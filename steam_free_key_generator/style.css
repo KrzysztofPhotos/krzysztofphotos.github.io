@@ -2,8 +2,18 @@ body {
     background: rgb(26,40,58);
     background: radial-gradient(circle, rgba(26,40,58,1) 52%, rgba(29,32,36,1) 100%);
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50vh;
+    transform: translateY(-50%);
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.middle {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    
 }
