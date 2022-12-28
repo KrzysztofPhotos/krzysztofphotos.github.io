@@ -3,6 +3,8 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    outline: 0;
+    list-style: none;
 }
 
 body {
@@ -34,7 +36,8 @@ body {
 }
 
 .sidebar .logo img{
-    width: 96px;
+    width: 56px;
+    /* width: 96px; */
 }
 
 .sidebar .logo h3 {
@@ -43,6 +46,31 @@ body {
     margin-top: 12px;
     font-variant: small-caps;
     pointer-events: none;
+    scale: 0;
     opacity: 0;
 }
 
+.sidebar .nav-title {
+    color: #dadada;
+    margin: 40px 0 18px;
+    pointer-events: none;
+}
+
+.sidebar nav {
+    padding: 0 30px;
+}
+
+.sidebar nav .nav-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 56 px;
+    padding: 0 16px;
+    margin: 8px 0;
+    color: #fff;
+}
+
+.sidebar nav .nav-item
