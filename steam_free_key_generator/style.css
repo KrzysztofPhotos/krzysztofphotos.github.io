@@ -34,10 +34,13 @@ h2 {
 
 .middle img {
     width: 400px;
+    opacity: 1;
+    transition: opacity 0.2s easy;
 }
 
 .select-game {
     width: 30vw;
+    opacity: 1;
 }
 
 .middle div {
@@ -68,4 +71,8 @@ h2 {
     width: max-content;
     text-decoration: none;
     color: white;
+}
+
+.hide-el {
+    opacity: 0;
 }
