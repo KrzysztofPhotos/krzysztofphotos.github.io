@@ -3,3 +3,7 @@ body {
     background: radial-gradient(circle, rgba(26,40,58,1) 52%, rgba(29,32,36,1) 100%);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    font-weight: 700;
+}
