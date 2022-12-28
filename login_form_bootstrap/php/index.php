@@ -1,0 +1,66 @@
+<!-- INSPIRED BY https://youtu.be/d2V60-bAmJE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+
+    <div class="login">
+        <h1 class="text-center">Hello Again!</h1>
+        
+        <form method="post" action="signup.php" class="needs-validation">
+            
+            <div class="form-group was-validated">
+                <label class="form-label" for="email">Email address</label>
+                <input name="email" class="form-control" type="email" id="email" required>
+                <div class="invalid-feedback">
+                    Please enter your email adress
+                </div>
+            </div>
+
+            <div class="form-group was-validated">
+                <label class="form-label" for="password">Password</label>
+                <input name="password" class="form-control" type="password" id="password" required>
+                <div class="invalid-feedback">
+                    Please enter your password
+                </div>
+            </div>
+
+            <div class="form-group from-check">
+                <input class="form-check-input" type="checkbox" id="check">
+                <label class="form-check-label" for="check">Remember me</label>
+            </div>
+
+            <input class="btn btn-success w-100" type="submit" value="SIGN IN">
+
+        </form>
+    </div>
+
+
+    
+    <?php
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "baza_danych";
+
+        // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+        }
+
+        
+    ?>
+
+
+</body>
+</html>
