@@ -6,53 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Glass Sidebar</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
     <div class="sidebar">
-
-        <div class="logo">
-            <img src="logo.png" alt="Logo of company">
-            <h3>Krzysztof Kwiatkowski</h3>
+        <div class="toggle">
+            <i class="bx bx-chevron-right"></i>
         </div>
-
+        <div class="logo">
+            <img src="logo.png" alt="company logo">
+            <h3>Krzysztof K</h3>
+        </div>
         <nav>
             <div class="nav-title">
                 Management
             </div>
- 
+            <ul>
+                <li class="nav-item active">
+                    <i class="bx bxs-dashboard"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li class="nav-item">
+                    <i class="bx bxs-bar-chart-alt-2"></i>
+                    <span>Analytics</span>
+                </li>
+                <li class="nav-item">
+                    <i class="bx bxs-wallet"></i>
+                    <span>Wallet</span>
+                </li>
+                <li class="nav-item">
+                    <i class="bx bxs-bell"></i>
+                    <span>Notifications</span>
+                </li>
+                <li class="nav-item">
+                    <i class="bx bxs-cog"></i>
+                    <span>Settings</span>
+                </li>
+            </ul>
+            <hr>
+            <div class="nav-title">
+                Supports
+            </div>
             <ul>
                 <li class="nav-item">
-                    <i class="bx bxs-dashboard">
-                        <span>Dashboard</span>
-                    </i>
+                    <i class="bx bxs-help-circle"></i>
+                    <span>Get Help</span>
                 </li>
                 <li class="nav-item">
-                    <i class="bx bxs-bar-chart-alt-2">
-                        <span>Analytics</span>
-                    </i>
-                </li>
-                <li class="nav-item">
-                    <i class="bx bxs-wallet">
-                        <span>Wallet</span>
-                    </i>
-                </li>
-                <li class="nav-item">
-                    <i class="bx bxs-bell">
-                        <span>Notifications</span>
-                    </i>
-                </li>
-                <li class="nav-item">
-                    <i class="bx bxs-cog">
-                        <span>Settings</span>
-                    </i>
+                    <i class="bx bxs-message-dots"></i>
+                    <span>Send Feedback</span>
                 </li>
             </ul>
         </nav>
-
     </div>
 
-
+    <!-- JS File -->
     <script src="script.js"></script>
+
 </body>
 </html>
