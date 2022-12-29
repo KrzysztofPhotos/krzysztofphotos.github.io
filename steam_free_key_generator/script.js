@@ -3,7 +3,6 @@ const clicked = document.getElementById("button");
 
 
 clicked.addEventListener("click", () => {
-    console.log("clciked");
     const toHide1 = document.querySelector(".cont-img");
     const toHide2 = document.querySelector(".cont-text");
     const toHide3 = document.querySelector(".cont-select");
