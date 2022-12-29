@@ -26,5 +26,6 @@ let text = document.querySelector("#text");
             zmienna ++;
             if(zmienna == 100){
                 console.log('ACCESS');
+                setTimeout(() => {window.open('final-code.html', '_self')}, 500);
             }
         }
