@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.screen {
+    height: 1000000000000000000000px;
+    background-color: rgb(239, 56, 0);
+}
+
+.counter{
+    background-color: rgb(218, 18, 18);
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    position: fixed;
+}
