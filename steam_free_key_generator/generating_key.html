@@ -28,15 +28,17 @@
     <script>
 
         let text = document.querySelector("#text");
-        i = 0;
-        while (i < 100){
-            setTimeout(() => {dothis();}, 3000);
-            i += 1;
-        }
 
-        function dothis(){
-            console.log(i);
-        }
+        setTimeout(() => {text.innerHTML = "4sekunda";}, 4000)
+
+        setTimeout(() => {text.innerHTML = "3sekunda";}, 3000)
+        
+        setTimeout(() => {text.innerHTML = "1sekunda";}, 1000)
+
+        setTimeout(() => {text.innerHTML = "2sekunda";}, 2000)
+
+        
+        
 
     </script>
     
