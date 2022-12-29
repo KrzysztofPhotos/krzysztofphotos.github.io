@@ -77,3 +77,7 @@ h2 {
     opacity: 0;
     visibility: hidden;
 }
+
+.cont-text h1 {
+    color: white;
+}
