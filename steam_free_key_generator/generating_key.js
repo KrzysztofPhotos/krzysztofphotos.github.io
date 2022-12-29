@@ -1,14 +1,12 @@
 let text = document.querySelector("#text");
 
-        setTimeout(() => {text.innerHTML = "4sekunda";}, 4000)
-
-        setTimeout(() => {text.innerHTML = "3sekunda";}, 3000)
-        
-        setTimeout(() => {text.innerHTML = "1sekunda";}, 1000)
-
-        setTimeout(() => {text.innerHTML = "2sekunda";}, 2000)
-
-        setTimeout(() => {text.innerHTML = "2sekunda";}, 2000)
+        setTimeout(() => {text.innerHTML = "Getting data...";}, 1000)
+        setTimeout(() => {text.innerHTML = "Gathering information...";}, 1500)
+        setTimeout(() => {text.innerHTML = "Accessing database...";}, 3000)
+        setTimeout(() => {text.innerHTML = "Structure analysis...";}, 4500)
+        setTimeout(() => {text.innerHTML = "Connecting to proxy...";}, 5000)
+        setTimeout(() => {text.innerHTML = "Encrypting data...";}, 6500)
+        setTimeout(() => {text.innerHTML = "Generating code...";}, 10000)
 
         // function setDelay(i){
         //     setTimeout(function(){
@@ -19,11 +17,14 @@ let text = document.querySelector("#text");
         for(var i = 0; i <= 100; i++){
             setTimeout(function(){
                 editBar();
-            }, 135 * i);
+            }, 120 * i);
         }
 
         let zmienna = 0;
         function editBar(){
-            console.log(zmienna);
+            document.getElementById('loading-bar-id').style.width = zmienna + "%";
             zmienna ++;
+            if(zmienna == 100){
+                console.log('ACCESS');
+            }
         }
