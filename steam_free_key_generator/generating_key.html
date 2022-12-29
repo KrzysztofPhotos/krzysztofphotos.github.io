@@ -15,7 +15,7 @@
     
     <div class="middle">
         <div class="info">
-            XD
+            <p id="text">Loading...</p>
         </div>
     </div>
 
@@ -25,7 +25,20 @@
     
         
     
+    <script>
 
+        let text = document.querySelector("#text");
+        i = 0;
+        while (i < 100){
+            setTimeout(() => {dothis();}, 3000);
+            i += 1;
+        }
+
+        function dothis(){
+            console.log(i);
+        }
+
+    </script>
     
     
     <script src="script.js"></script>

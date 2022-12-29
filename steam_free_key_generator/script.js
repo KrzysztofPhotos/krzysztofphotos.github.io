@@ -28,3 +28,4 @@ function hide(containerEl){
     setTimeout(() => {containerEl.classList.add("hide-el"); }, 200);
     setTimeout(() => {window.open('generating_key.html', '_self')}, 210);
 }
+
