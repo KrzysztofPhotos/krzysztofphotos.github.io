@@ -5,10 +5,13 @@ const clicked = document.getElementById("button");
 clicked.addEventListener("click", () => {
     console.log("clciked");
     const toHide1 = document.querySelector(".cont-img");
-    const toHide2 = document.querySelector(".cont_text");
+    const toHide2 = document.querySelector(".cont-text");
     const toHide3 = document.querySelector(".cont-select");
     const toHide4 = document.querySelector(".przycisk");
     hide(toHide1);
+    hide(toHide2);
+    hide(toHide3);
+    hide(toHide4);
 })
 
 function wysun(i, elementToMove){
@@ -20,7 +23,8 @@ function hide(containerEl){
     for (let i = 1; i <= 50; i++) {
         setTimeout(() => {
             wysun(i, containerEl);
-        }, 8 * i);
+        }, 2 * i);
     }
+    setTimeout(() => {containerEl.classList.add("hide-el"); }, 200);
     setTimeout(() => {containerEl.classList.add("hide-el"); }, 200);
 }
