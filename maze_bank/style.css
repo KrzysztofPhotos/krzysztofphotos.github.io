@@ -23,3 +23,13 @@ body {
     width: 65%;
     background-color: rgba(67, 235, 1, 0.849);
 }
+
+.web-links-shadow {
+    width: 100%;
+    height: 1vh;
+    background-color: rgb(133, 0, 0)
+}
+
+.arrow img{
+    width: 200px;
+}
