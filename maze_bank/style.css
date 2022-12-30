@@ -11,7 +11,7 @@ body {
 
 .web-links {
     width: 100%;
-    height: 4vh;
+    height: 5vh;
     background-color: red;
     display: flex;
     text-align: center;
@@ -22,6 +22,7 @@ body {
     height: 100%;
     width: 65%;
     background-color: rgba(67, 235, 1, 0.849);
+    display: flex;
 }
 
 .web-links-shadow {
@@ -30,6 +31,24 @@ body {
     background-color: rgb(133, 0, 0)
 }
 
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .arrow img{
-    width: 200px;
+    padding: 0.6vh;
+    height: 45%;
+    background-color: rgb(230, 230, 230);
+    border: 2px solid #616161;
+}
+
+.right-arrow img {
+    border-radius: 0px 8px 8px 0px;
+    margin-left: 0vh;
+}
+
+.left-arrow img {
+    border-radius: 8px 0 0 8px;
 }
