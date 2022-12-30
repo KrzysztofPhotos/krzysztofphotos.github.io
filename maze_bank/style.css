@@ -13,4 +13,13 @@ body {
     width: 100%;
     height: 4vh;
     background-color: red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.web-links-center {
+    height: 100%;
+    width: 65%;
+    background-color: rgba(67, 235, 1, 0.849);
 }
