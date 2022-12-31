@@ -1,4 +1,4 @@
 // SOUND WHEN CLICKED
-$('body').click(function(){
-    console.log('clicked');
-});
+document.body.addEventListener("click", () => {
+    console.log("clicked")
+})
