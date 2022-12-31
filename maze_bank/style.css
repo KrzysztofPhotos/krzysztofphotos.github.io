@@ -4,7 +4,7 @@
 }
 
 /* FOR PHONES */
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 1200px) {
     body {
         margin: 0;
         padding: 0;
@@ -254,7 +254,7 @@
 
 
 /* FOR PC  */
-@media only screen and (min-width: 921px) {
+@media only screen and (min-width: 1201px) {
     body {
         margin: 0;
         padding: 0;
