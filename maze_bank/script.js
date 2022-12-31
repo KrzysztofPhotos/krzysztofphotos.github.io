@@ -38,3 +38,19 @@ function clickMainMenu(){
     document.getElementById('clicksfx').play();
     setTimeout(() => { window.open("mainmenu.html","_self"); }, 300);
 }
+
+function clickDeposit(){
+    document.getElementById('clicksfx').play();
+    setTimeout(() => { window.open("deposit.html","_self"); }, 300);
+}
+
+function clickWithdrawn(){
+    document.getElementById('clicksfx').play();
+    setTimeout(() => { window.open("withdrawn.html","_self"); }, 300);
+}
+
+function clickTrLog(){
+    document.getElementById('clicksfx').play();
+    setTimeout(() => { window.open("transaction_log.html","_self"); }, 300);
+}
+
