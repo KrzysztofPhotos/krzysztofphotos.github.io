@@ -22,7 +22,7 @@
         background: rgb(221,221,225);
         background: linear-gradient(0deg, rgba(221,221,225,1) 0%, rgba(201,201,208,1) 100%);
         box-shadow: inset 0px -13px 25px -3px rgba(0, 0, 0, 0.23);
-    -webkit-box-shadow: inset 0px -13px 25px -3px rgba(0, 0, 0, 0.23);
+        -webkit-box-shadow: inset 0px -13px 25px -3px rgba(0, 0, 0, 0.23);
         display: flex;
         text-align: center;
         justify-content: center;

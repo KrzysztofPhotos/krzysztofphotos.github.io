@@ -13,7 +13,7 @@ document.querySelector(".btn").addEventListener("mouseover", () => {
     hovered();
 })
 
-document.querySelector(".left-arrow").addEventListener("mouseover", () => {
+document.querySelector(".left-arrow2").addEventListener("mouseover", () => {
     hovered();
 })
 
