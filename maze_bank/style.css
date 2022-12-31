@@ -173,3 +173,24 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.header {
+    display: inline-flex;
+    /* background-color: blue; */
+    width: 100%;
+}
+
+.header img {
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    width: 40%;
+    height: 40%;
+}
+
+.red-line {
+    background-color: rgba(255, 0, 0, 1);
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 0.7%;
+}
