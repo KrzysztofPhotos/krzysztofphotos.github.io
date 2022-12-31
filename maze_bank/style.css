@@ -208,8 +208,33 @@ body {
     text-align: center;
     font-size: 50px;
     font-family: gtaUI;
+    align-items: center;
 }
 
 .choose-service p {
-    margin-bottom: 0;
+    margin-bottom: 0--;
+}
+
+.btn {
+    display: flex;
+    /* background-color: red; */
+    height: 100px;
+    width: 450px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid #79121e;
+    background: rgb(153,33,39);
+    background: linear-gradient(0deg, rgba(153,33,39,1) 0%, rgba(194,29,48,1) 100%);
+}
+
+.btn p {
+    margin: 0;
+    padding: 0;
+    font-size: 27px;
+    color: white;
+}
+
+* {
+    text-decoration: none;
 }
