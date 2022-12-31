@@ -33,14 +33,14 @@
         width: 100%;
         /* background-color: rgba(67, 235, 1, 0.849); */
         display: flex;
-        padding-left: 0.5vh;
-        padding-right: 0.5vh;
+        padding-left: 0.3vh;
+        padding-right: 0.3vh;
         justify-content: space-between;
     }
     
     .element {
         display: flex;
-        margin: 10px;
+        margin: 2px;
     }
     
     .web-links-shadow {
@@ -73,7 +73,7 @@
         padding: 0.6vh;
         height: 45%;
         border: 2px solid #616161;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: rgb(230, 230, 230);
     }
     
@@ -123,7 +123,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70%;
+        height: 100%;
     }
     
     .search-bar-x img {
@@ -254,7 +254,7 @@
 
 
 /* FOR PC  */
-@media only screen and (min-width: 1201px) {
+@media (min-width: 1201px) {
     body {
         margin: 0;
         padding: 0;
