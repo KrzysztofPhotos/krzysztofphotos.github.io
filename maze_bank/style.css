@@ -72,15 +72,15 @@ body {
 
 .content-search-bar p {
     border: 2px solid #616161;
+    border-right: none;
     border-radius: 10px;
     background-color: rgb(230, 230, 230);
     height: 45%;
     padding: 0.6vh;
+    border-radius: 10px 0px 0px 10px;
+    width: max-content;
 }
 
-#clock-icon {
-    height: 40px;
-}
 
 .search-bar {
     display: flex;
@@ -94,13 +94,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.6vh;
-    height: 45%;
 }
 
 .search-bar-x img {
     border: 2px solid #616161;
-    border-radius: 10px;
+    width: 1.8vh;
+    padding: 0.6vh;
+    border-radius: 0px 10px 10px 0px;
     background-color: rgb(230, 230, 230);
 }
 
