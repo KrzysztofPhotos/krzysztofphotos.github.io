@@ -159,12 +159,14 @@ body {
 .main-content{
     width: 100%;
     height: 94vh;
-    background-color: rgb(8, 46, 216);
+    background-color: rgb(236, 236, 236);
+    background: url(res/bgb.png);
+    background-size: 300px;
 }
 
 .content {
     width: 65%;
-    background-color: lime;
+    background-color: rgb(236, 236, 236);
     height: 100%;
     /* height: 500px; */
     position: relative;
