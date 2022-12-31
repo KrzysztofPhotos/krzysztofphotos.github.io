@@ -4,7 +4,7 @@
 }
 
 /* FOR PHONES */
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     body {
         margin: 0;
         padding: 0;
