@@ -30,5 +30,11 @@ document.querySelector(".search-bar-x").addEventListener("mouseover", () => {
 })
 
 function clickHome(){
-        window.open("index.html","_self");
+        document.getElementById('clicksfx').play();
+        setTimeout(() => { window.open("index.html","_self"); }, 300);
+}
+
+function clickMainMenu(){
+    document.getElementById('clicksfx').play();
+    setTimeout(() => { window.open("mainmenu.html","_self"); }, 300);
 }
