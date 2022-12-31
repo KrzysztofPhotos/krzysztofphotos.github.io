@@ -23,6 +23,13 @@ body {
     width: 65%;
     background-color: rgba(67, 235, 1, 0.849);
     display: flex;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    justify-content: space-between;
+}
+
+.element {
+    display: flex;
 }
 
 .web-links-shadow {
@@ -37,6 +44,20 @@ body {
     align-items: center;
 }
 
+.home-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn img{
+    padding: 0.6vh;
+    height: 45%;
+    border: 2px solid #616161;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
 .arrow img{
     padding: 0.6vh;
     height: 45%;
@@ -45,10 +66,11 @@ body {
 }
 
 .right-arrow img {
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0px 10px 10px 0px;
     margin-left: 0vh;
+    height: 45%;
 }
 
 .left-arrow img {
-    border-radius: 8px 0 0 8px;
+    border-radius: 10px 0 0 10px;
 }
