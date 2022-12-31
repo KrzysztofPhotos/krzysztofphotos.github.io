@@ -112,11 +112,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .search-bar-x img {
     border: 2px solid #616161;
-    width: 1.6vh;
+    height: 100%;
     padding: 0.6vh;
     border-radius: 0px 10px 10px 0px;
     background-color: rgb(230, 230, 230);
