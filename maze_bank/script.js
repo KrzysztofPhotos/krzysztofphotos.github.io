@@ -28,3 +28,10 @@ document.querySelector(".clock").addEventListener("mouseover", () => {
 document.querySelector(".search-bar-x").addEventListener("mouseover", () => {
     hovered();
 })
+
+function clickHome(){
+    document.getElementById('clicksfx').play();
+    setTimeout(() =>{
+        window.open("index.html","_self")
+    }, 500);
+}
