@@ -130,7 +130,7 @@
         border: 2px solid #616161;
         height: 100%;
         padding: 0.6vh;
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 5px 5px 0px;
         background-color: rgb(230, 230, 230);
         
     }
@@ -139,7 +139,7 @@
         padding: 0.6vh;
         height: 45%;
         border: 2px solid #616161;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: rgb(230, 230, 230);
     }
     
@@ -151,8 +151,8 @@
     }
     
     .right-arrow img {
-        border-radius: 0px 10px 10px 0px;
-        margin-left: 0vh;
+        border-radius: 0px 5px 5px 0px;
+        margin-left: 0;
         height: 45%;
         border-left: none;
         background-color: rgb(121, 121, 121);
@@ -208,20 +208,20 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        font-size: 50px;
+        font-size: 30px;
         font-family: gtaUI;
         align-items: center;
     }
     
     .choose-service p {
-        margin-bottom: 0--;
+        margin-bottom: 0;
     }
     
     .btn {
         display: flex;
         /* background-color: red; */
-        height: 100px;
-        width: 450px;
+        height: 70px;
+        width: 200px;
         border-radius: 5px;
         align-items: center;
         justify-content: center;
@@ -243,7 +243,7 @@
     .btn p {
         margin: 0;
         padding: 0;
-        font-size: 27px;
+        font-size: 15px;
         color: white;
     }
     
