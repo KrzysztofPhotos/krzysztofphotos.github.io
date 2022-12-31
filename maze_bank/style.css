@@ -6,7 +6,7 @@ body {
 
 .screen {
     width: 100vw;
-    background-color: rgba(43, 0, 236, 0.371);
+    /* background-color: rgba(43, 0, 236, 0.371); */
     height: 100vh;
 }
 
@@ -149,8 +149,25 @@ body {
     margin-left: 0vh;
     height: 45%;
     border-left: none;
+    background-color: rgb(121, 121, 121);
 }
 
 .left-arrow img {
     border-radius: 10px 0 0 10px;
+}
+
+.main-content{
+    width: 100%;
+    height: 94vh;
+    background-color: rgb(8, 46, 216);
+}
+
+.content {
+    width: 65%;
+    background-color: lime;
+    height: 100%;
+    /* height: 500px; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
