@@ -50,6 +50,20 @@ body {
     align-items: center;
 }
 
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock img {
+    padding: 0.6vh;
+    height: 45%;
+    border: 2px solid #616161;
+    border-radius: 10px;
+    background-color: rgb(230, 230, 230);
+}
+
 .home-btn img{
     padding: 0.6vh;
     height: 45%;
