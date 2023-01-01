@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #090a10 40%, #161b24);
+}
+
+.glitch {
+    width: 500px;
+    height: 340px;
+    background: url("images/audi.png");
+    background-size: cover;
+    animation: glitch 3s infinite steps(1);
+}
+
+@keyframes  glitch {
+    0%, 100%  {
+        background: url("images/audi.png");
+        background-size: cover;
+    }
+    
+    92.5%  {
+        background: url("images/audi\ \(2\).png");
+        background-size: cover;
+        opacity:  1;
+    }
+
+    95%  {
+        background: url("images/audi\ \(3\).png");
+        background-size: cover;
+        opacity: 0;
+    }
+
+    97.5%  {
+        background: url("images/audi\ \(4\).png");
+        background-size: cover;
+        opacity: 1;
+    }
+
+   
+}
