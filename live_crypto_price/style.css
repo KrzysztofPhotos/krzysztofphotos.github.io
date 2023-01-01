@@ -18,6 +18,7 @@ body {
     height: 100px;
     border-radius: 8px;
     background: #202022;
+    font-family: 'Mukta', sans-serif;
 }
 
 .coin .coin-logo {
@@ -37,7 +38,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-family: 'Mukta', sans-serif;
 }
 
 .coin .coin-name h3 {
@@ -50,4 +50,45 @@ body {
     font-size: 14px;
     font-weight: 500;
     margin: 6px 0 0 2px;
+}
+
+.coin .coin-price {
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    padding: 8px 22px 0 0;
+    text-align: right;
+}
+
+.coin .coin-price .price {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: -6px;
+}
+
+.coin .coin-price .change {
+    color: #aaa;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.coin.rising {
+    background: linear-gradient(
+        90deg, #202022, #4eb64510
+    );
+}
+
+.coin.rising .coin-price .price {
+    color: #30ff20;
+}
+
+.coin.falling {
+    background: linear-gradient(
+        90deg, #202022, #aa444425
+    );
+}
+
+.coin.falling .coin-price .price {
+    color: #ff4040;
 }
