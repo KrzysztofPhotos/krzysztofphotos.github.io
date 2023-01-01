@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +18,12 @@ body {
     width: 400px;
     height: 400px;
     color: #fff;
-    background: transparent;
+    background: #151320;
     font: 700 2rem 'Montserrat';
     line-height: 400px;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 3px;
 }
 
 .box::before,
@@ -32,7 +35,24 @@ body {
     height: calc(100% + 30px);
     top: -15px;
     left: -15px;
+    border-radius: 8px;
     background: linear-gradient(45deg,
         #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
         #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff);
+    background-size: 300%;
+    animation: border 12s linear infinite;
+}
+
+.box::after {
+    filter: blur(50px);
+}
+
+@keyframes border {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
 }
