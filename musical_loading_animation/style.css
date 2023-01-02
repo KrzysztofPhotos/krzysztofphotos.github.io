@@ -19,7 +19,7 @@ body {
 .loader span {
     width: 36px;
     margin: 0 2px;
-    background: white;
+    /* background: white; */
     border-radius: 4px;
     animation: loading 2s infinite;
 }
