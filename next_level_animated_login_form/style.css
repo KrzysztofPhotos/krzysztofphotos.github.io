@@ -24,7 +24,7 @@ section {
     justify-content: center;
 }
 
-section.signin {
+section .signin {
     position: absolute;
     width: 400px;
     background: #222;
@@ -37,7 +37,7 @@ section.signin {
     box-shadow: 0 15px 35px rgba(0,0,0,0.5);
 }
 
-section.signin.content {
+section .signin .content {
     position: relative;
     width: 100%;
     display: flex;
@@ -47,25 +47,25 @@ section.signin.content {
     gap: 40px;
 }
 
-section.signin.content h2 {
+section .signin .content h2 {
     font-size: 2em;
     color: #0f0;
     text-transform: uppercase;
 }
 
-section.signin.content.form {
+section .signin .content .form {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px
 }
 
-section.signin.content.form.inputBx {
+section .signin .content .form .inputBx {
     position: relative;
     width: 100%;
 }
 
-section.signin.content.form.inputBx input {
+section .signin .content .form .inputBx input {
     position: relative;
     width: 100%;
     background: #333;
@@ -78,10 +78,10 @@ section.signin.content.form.inputBx input {
     font-size: 1em;
 }
 
-section.signin.content.form.inputBx i {
+section .signin .content .form .inputBx i {
     position: absolute;
     left: 0;
     padding: 15px 10px;
     font-style: normal;
-    
+    color: #aaa;
 }
