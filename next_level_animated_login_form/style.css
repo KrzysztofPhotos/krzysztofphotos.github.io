@@ -84,4 +84,40 @@ section .signin .content .form .inputBx i {
     padding: 15px 10px;
     font-style: normal;
     color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.signin .content .form .inputBx input:focus ~ i,
+.signin .content .form .inputBx input:valid ~ i {
+    transform: translateY(-7.5px);
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.signin .content .form .links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.signin .content .form .links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signin .content .form .links a:nth-child(2){
+    color: #0f0;
+    font-weight: 600;
+}
+
+.signin .content .form .inputBx input[type="submit"]{
+    padding: 10px;
+    background: #0f0;
+    color: #111;
+    font-weight: 600;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    cursor: pointer;
 }
