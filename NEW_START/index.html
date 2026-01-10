@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K. Photos — Portfolio</title>
+    
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <nav class="nav">
+      <div class="brand">K. PHOTOS</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
+      <div class="hero-glass">
+        <h1>WELCOME TO MY WEBSITE</h1>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects-section">
+      <div class="section-title">
+        <span></span>
+        <h2>My Projects</h2>
+        <span></span>
+      </div>
+
+      <!-- JS injects cards here -->
+      <div id="projectsGrid" class="projects-grid"></div>
+    </section>
+
+  </main>
+
+  <!-- ================= MODAL (ONLY ONE) ================= -->
+  <div id="modalOverlay" class="modal-overlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+
+      <div class="modal-media">
+        <!-- video OR image injected here -->
+      </div>
+
+      <a id="modalLink" target="_blank" class="modal-button">
+        Open Project
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="projects.manifest.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
