@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KitCats — Photo Gallery</title>
+  <link rel="icon" href="fav.ico" type="image/x-icon">
+  <style>
+    :root{--card:#0f1720}
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;
+      background:linear-gradient(180deg,#0b0c0d,#0f1316);
+      color:#e6eef6;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+    }
+    header{padding:18px 24px}
+    h1{margin:0;font-size:20px}
+
+    .wrap{max-width:1200px;margin:auto;padding:12px}
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+      gap:14px;
+    }
+
+    .photo{
+      background:var(--card);
+      border-radius:12px;
+      overflow:hidden;
+      position:relative;
+      padding-bottom:100%;
+      cursor:pointer;
+      box-shadow:0 6px 18px rgba(0,0,0,.6);
+    }
+
+    .photo img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .caption{
+      position:absolute;
+      bottom:8px;
+      left:8px;
+      right:8px;
+      font-size:12px;
+      color:#fff;
+      background:rgba(0,0,0,.45);
+      padding:4px 6px;
+      border-radius:6px;
+      text-align:center;
+    }
+
+    .lightbox{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.75);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      z-index:100;
+    }
+    .lightbox.open{display:flex}
+
+    .lightbox img{
+      max-width:95%;
+      max-height:95%;
+      border-radius:10px;
+    }
+
+    .nav{
+      position:absolute;
+      inset:0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      pointer-events:none;
+    }
+    .nav button{
+      pointer-events:auto;
+      background:none;
+      border:none;
+      color:white;
+      font-size:40px;
+      padding:20px;
+      cursor:pointer;
+    }
+
+    .close{
+      position:absolute;
+      top:20px;
+      right:20px;
+      font-size:18px;
+      background:none;
+      border:1px solid #fff;
+      color:#fff;
+      padding:6px 10px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body>
+<header class="wrap">
+  <h1>KitCats — Photo Gallery</h1>
+</header>
+
+<main class="wrap">
+  <section id="gallery" class="gallery"></section>
+</main>
+
+<div id="lightbox" class="lightbox">
+  <button class="close" id="close">✕</button>
+  <div class="nav">
+    <button id="prev">◀</button>
+    <button id="next">▶</button>
+  </div>
+  <img id="lightboxImg" />
+</div>
+
+<script>
+  const images = [
+    "pic00000.jpg","pic00001.jpg","pic00002.jpg","pic00003.jpg","pic00004.jpg",
+    "pic00005.jpg","pic00006.jpg","pic00007.jpg","pic00008.jpg","pic00009.jpg",
+    "pic00010.jpg","pic00011.jpg","pic00012.jpg","pic00013.jpg","pic00014.jpg",
+    "pic00015.jpg","pic00016.jpg","pic00017.jpg","pic00018.jpg","pic00019.jpg",
+
+    "pic00020.jpg","pic00021.jpg","pic00022.jpg","pic00023.jpeg","pic00024.jpg",
+    "pic00025.jpg","pic00026.jpg","pic00027.jpg","pic00028.jpg","pic00029.jpg",
+    "pic00030.jpg","pic00031.jpg","pic00032.jpg","pic00033.jpg","pic00034.png",
+    "pic00035.jpg","pic00036.jpg","pic00037.jpg","pic00038.jpg","pic00039.png",
+
+    "pic00040.jpg","pic00041.jpg","pic00042.jpg","pic00043.jpg","pic00044.jpg",
+    "pic00045.jpg","pic00046.jpg","pic00047.jpeg","pic00048.jpeg","pic00049.jpeg",
+    "pic00050.jpeg","pic00051.jpeg","pic00052.jpg"
+  ];
+
+  const gallery = document.getElementById("gallery");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  let current = 0;
+
+  images.forEach((file, i) => {
+    const div = document.createElement("div");
+    div.className = "photo";
+    div.innerHTML = `
+      <img src="./images/${file}" alt="KitCat ${i+1}">
+      <div class="caption">${file}</div>
+    `;
+    div.onclick = () => openLightbox(i);
+    gallery.appendChild(div);
+  });
+
+  function openLightbox(i){
+    current = i;
+    lightboxImg.src = `./images/${images[current]}`;
+    lightbox.classList.add("open");
+  }
+
+  function closeLightbox(){
+    lightbox.classList.remove("open");
+  }
+
+  function next(){
+    current = (current + 1) % images.length;
+    lightboxImg.src = `./images/${images[current]}`;
+  }
+
+  function prev(){
+    current = (current - 1 + images.length) % images.length;
+    lightboxImg.src = `./images/${images[current]}`;
+  }
+
+  document.getElementById("close").onclick = closeLightbox;
+  document.getElementById("next").onclick = next;
+  document.getElementById("prev").onclick = prev;
+
+  window.onkeydown = e => {
+    if(!lightbox.classList.contains("open")) return;
+    if(e.key === "ArrowRight") next();
+    if(e.key === "ArrowLeft") prev();
+    if(e.key === "Escape") closeLightbox();
+  };
+</script>
+</body>
+</html>
