@@ -266,6 +266,7 @@ body {
 }
 
 .modal-media {
+  position: relative;
   margin: 1.5rem 0;
 }
 
@@ -273,6 +274,15 @@ body {
 .modal-media img {
   width: 100%;
   border-radius: 12px;
+}
+
+.modal-media iframe {
+  width: 100%;
+  height: 420px;
+  z-index: 1;
+  border: none;
+  border-radius: 12px;
+  background: #000;
 }
 
 .modal-button {
@@ -301,6 +311,8 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+  z-index: 10; /* 👈 IMPORTANT */
+  pointer-events: auto;  /* 🔥 FORCE CLICK */
 }
 
 /* ================= RESPONSIVE ================= */

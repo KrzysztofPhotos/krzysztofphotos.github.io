@@ -10,10 +10,13 @@ const projects = PROJECT_FOLDERS.map(folder => {
     title,
     image: `../${folder}/preview.jpg`,
     video: `../${folder}/video.mp4`,
+    iframe: `../${folder}/index.html`,
     link: `../${folder}/index.html`,
+    previewType: "iframe", // 👈 CHANGE PER PROJECT IF NEEDED
     description: "Click to open project"
   };
 });
+
 
 /* ================= ELEMENTS ================= */
 
@@ -49,14 +52,25 @@ function openModal(project) {
 
   modalMedia.innerHTML = "";
 
-  if (project.video) {
+  if (project.previewType === "iframe") {
+    const iframe = document.createElement("iframe");
+    iframe.src = project.iframe;
+    iframe.loading = "lazy";
+    iframe.tabIndex = -1; // 🔥 THIS IS IMPORTANT
+    iframe.setAttribute("sandbox", "allow-scripts allow-same-origin");
+    modalMedia.appendChild(iframe);
+  }
+
+  if (project.previewType === "video") {
     const video = document.createElement("video");
     video.src = project.video;
     video.controls = true;
     video.autoplay = true;
     video.playsInline = true;
     modalMedia.appendChild(video);
-  } else {
+  }
+
+  if (project.previewType === "image") {
     const img = document.createElement("img");
     img.src = project.image;
     modalMedia.appendChild(img);
@@ -68,7 +82,7 @@ function openModal(project) {
 
 function closeModal() {
   modalOverlay.classList.remove("active");
-  modalMedia.innerHTML = "";
+  modalMedia.innerHTML = ""; // kills iframe/video
   document.body.style.overflow = "";
 }
 
@@ -80,6 +94,10 @@ modalOverlay.addEventListener("click", e => {
   if (e.target === modalOverlay) closeModal();
 });
 
-document.addEventListener("keydown", e => {
-  if (e.key === "Escape") closeModal();
+window.addEventListener("keydown", e => {
+  if (e.key === "Escape") {
+    e.preventDefault();
+    closeModal();
+  }
 });
+
