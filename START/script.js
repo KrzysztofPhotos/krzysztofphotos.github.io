@@ -13,6 +13,7 @@ const projects = PROJECT_FOLDERS.map(folder => {
     video: `../${folder}/video.mp4`,
     iframe: `../${folder}/index.html`,
     link: `../${folder}/index.html`,
+    descFile: `../.previews/${folder}.txt`,
     previewType: "iframe", // 👈 CHANGE PER PROJECT IF NEEDED
     description: "Click to open project"
   };
@@ -48,16 +49,36 @@ projects.forEach(project => {
 
 function openModal(project) {
   modalTitle.textContent = project.title;
-  modalDescription.textContent = project.description;
+  modalDescription.textContent = "Loading description...";
   modalLink.href = project.link;
 
   modalMedia.innerHTML = "";
+
+  /* ================= LOAD DESCRIPTION FROM FILE ================= */
+
+  if (project.descFile) {
+    fetch(project.descFile)
+      .then(res => {
+        if (!res.ok) throw new Error("No desc file");
+        return res.text();
+      })
+      .then(text => {
+        modalDescription.textContent = text.trim();
+      })
+      .catch(() => {
+        modalDescription.textContent = "Click to open project";
+      });
+  } else {
+    modalDescription.textContent = "Click to open project";
+  }
+
+  /* ================= PREVIEW ================= */
 
   if (project.previewType === "iframe") {
     const iframe = document.createElement("iframe");
     iframe.src = project.iframe;
     iframe.loading = "lazy";
-    iframe.tabIndex = -1; // 🔥 THIS IS IMPORTANT
+    iframe.tabIndex = -1; // prevents focus trap
     iframe.setAttribute("sandbox", "allow-scripts allow-same-origin");
     modalMedia.appendChild(iframe);
   }
@@ -74,12 +95,17 @@ function openModal(project) {
   if (project.previewType === "image") {
     const img = document.createElement("img");
     img.src = project.image;
+    img.alt = project.title;
     modalMedia.appendChild(img);
   }
 
+  /* ================= OPEN MODAL ================= */
+
   modalOverlay.classList.add("active");
   document.body.style.overflow = "hidden";
+  modalOverlay.focus?.(); // keeps ESC working if you added tabindex
 }
+
 
 function closeModal() {
   modalOverlay.classList.remove("active");
