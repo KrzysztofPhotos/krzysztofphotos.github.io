@@ -9,11 +9,11 @@ const projects = PROJECT_FOLDERS.map(folder => {
   return {
     title,
     //image: `../${folder}/preview.jpg`,
-    image: `../.previews/${folder}.jpg`,
+    image: `../previews/${folder}.jpg`,
     video: `../${folder}/video.mp4`,
     iframe: `../${folder}/index.html`,
     link: `../${folder}/index.html`,
-    descFile: `../.previews/${folder}.txt`,
+    descFile: `../previews/${folder}.txt`,
     previewType: "iframe", // 👈 CHANGE PER PROJECT IF NEEDED
     description: "Click to open project"
   };
