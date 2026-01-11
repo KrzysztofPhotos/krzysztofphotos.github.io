@@ -8,7 +8,8 @@ const projects = PROJECT_FOLDERS.map(folder => {
 
   return {
     title,
-    image: `../${folder}/preview.jpg`,
+    //image: `../${folder}/preview.jpg`,
+    image: `../.previews/${folder}.jpg`,
     video: `../${folder}/video.mp4`,
     iframe: `../${folder}/index.html`,
     link: `../${folder}/index.html`,
@@ -82,8 +83,11 @@ function openModal(project) {
 
 function closeModal() {
   modalOverlay.classList.remove("active");
-  modalMedia.innerHTML = ""; // kills iframe/video
-  document.body.style.overflow = "";
+
+  setTimeout(() => {
+    modalMedia.innerHTML = "";
+    document.body.style.overflow = "";
+  }, 300); // match CSS transition
 }
 
 /* ================= EVENTS ================= */
@@ -101,3 +105,54 @@ window.addEventListener("keydown", e => {
   }
 });
 
+
+document.querySelectorAll(".project-card").forEach(card => {
+  card.addEventListener("mousemove", e => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const rotateX = ((y / rect.height) - 0.5) * -10;
+    const rotateY = ((x / rect.width) - 0.5) * 10;
+
+    card.style.transform = `
+      perspective(800px)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+      scale(1.05)
+    `;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "scale(1)";
+  });
+});
+
+
+
+window.addEventListener("scroll", () => {
+  const scrolled = window.scrollY;
+  const hero = document.querySelector(".hero");
+  hero.style.backgroundPositionY = `${scrolled * 0.3}px`;
+});
+
+
+document.querySelectorAll(".modal-button").forEach(btn => {
+  btn.addEventListener("mousemove", e => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    btn.style.transform = "translate(0,0)";
+  });
+});
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById("scrollProgress").style.width =
+    `${(scrollTop / height) * 100}%`;
+});
